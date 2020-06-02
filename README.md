@@ -1,5 +1,7 @@
 # Functional Programming (FP) katas in Typescript
 
+## FP Concepts
+
 1. Pure functions vs. procedures (side effects)
 1. Higher order functions / Functions as data
 1. Closures
