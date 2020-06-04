@@ -17,11 +17,13 @@ const ToDoList = () => {
 }
 
 test("fetch all 'pending' ToDos in the ToDo list", () => {
-  expect(ToDoList().fetchPending()).toEqual([]);
-  expect(ToDoList().addToDo({text: "Buy milk", status: 'DONE'}));
-  expect(ToDoList().addToDo({text: "Drink milk with breakfast", status: 'DONE'}));
-  expect(ToDoList().addToDo({text: "Return expired milk", status: 'PENDING'}));
-  expect(ToDoList().fetchPending()).toEqual([
+  const todoList = ToDoList();
+
+  expect(todoList.fetchPending()).toEqual([]);
+  expect(todoList.addToDo({text: "Buy milk", status: 'DONE'}));
+  expect(todoList.addToDo({text: "Drink milk with breakfast", status: 'DONE'}));
+  expect(todoList.addToDo({text: "Return expired milk", status: 'PENDING'}));
+  expect(todoList.fetchPending()).toEqual([
     {text: "Return expired milk", status: 'PENDING'}
-  ])
+  ]);
 });

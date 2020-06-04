@@ -3,6 +3,7 @@ const isValidSentence = (sentence) => {
   // Should not be empty
   // Should not have any numbers
 
+  // Hint: Ramda
   if(sentence.length === 0 && sentence.length > 50 && /\d/.test(sentence)) {
     return false;
   }
