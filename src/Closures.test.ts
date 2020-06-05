@@ -1,4 +1,4 @@
-function isPrime(aNumber) {
+function isPrime(aNumber: number) {
 }
 
 test("calculate a prime number", () => {
